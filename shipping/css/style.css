@@ -1,0 +1,39 @@
+:root {
+	color-scheme: light dark;
+}
+
+.element {
+	color: light-dark(black, white);
+	background-color: light-dark(white, black);
+}
+
+.output {
+	background: light-dark(#447, #bcd);
+	color: light-dark(#bbd, #334);
+}
+
+.pickTable {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.theme-a {
+	background: #dca;
+	color: #731;
+  }
+  @media (prefers-color-scheme: dark) {
+	.theme-a.adaptive {
+	  background: #753;
+	  color: #dcb;
+	}
+  }
+  .theme-b {
+	background: #447;
+	color: #bbd;
+  }
+  @media (prefers-color-scheme: light) {
+	.theme-b.adaptive {
+	  background: #bcd;
+	  color: #334;
+	}
+  }
