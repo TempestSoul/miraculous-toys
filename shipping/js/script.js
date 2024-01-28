@@ -3,13 +3,13 @@ var teenF = ["A.D.A", "Aeon","Alix Kubdel", "Alya Césaire", "Alya Césaire [Rev
 "Kagami Tsurugi","Melodie [PV]", "Lila Rossi", "Marinette Dupain-Cheng", "Marinette Dupain-Cheng [Reverse]", "Marinette Dupain-Cheng [PV]","Mireille Caquet","Mylène Haprèle", 
 "Ondine", "Rose Lavillant","Sabrina Raincomprix", "Socqueline Wang", "Vivica", ];
 var teenM = ["Adrien Agreste", "Adrien Agreste [Reverse]", "Jalil Kubdel","Delmar [NY Special]", "Ivan Bruel","Félix Fathom", "Félix Agreste [PV]", "Jiao","Kang", "Kid Mime [PV]",
-"Mercury [PV]","Sparrow [PV]","Lê Chiến Kim", "Lian", "Luka Couffaine", "Marc Anciel", "Markov", "Max Kanté", "Maxkov [Reverse]", "Nathaniel Kurtzberg", "Nino Lahiffe", "Théo Barbot","Wayhem",];
+"Mercury [PV]","Sparrow [PV]","Prince Ali","Lê Chiến Kim", "Lian", "Luka Couffaine", "Marc Anciel", "Markov", "Max Kanté", "Maxkov [Reverse]", "Nathaniel Kurtzberg", "Nino Lahiffe", "Théo Barbot","Wayhem",];
 var adultF = ["Agent Blue", "Agent Red", "Agent Yellow","Amelie Graham de Vanily", "Anarka Couffaine", "René d'Herblay Aramis de Vannes", "Bo rùa",
 	"Anne-Jeanne Théoxanne du Bocquale", "Audrey Bourgeois","Barbara Keynes [Knightowl]", "Caline Bustier", "Camilla Hombee", "Clara Contard", "Clara Nightingale",
 	"Claudie Kanté","Emilie Agreste","Gina Dupain", "Gisèle","Hippolyta","Hurricane","Ignoblia","Jeanne d'Arc", "La Mariquita", "Mrs. Rossi", "Mrs. Bianca [Lila's Mom#2]", "Lila's Mother #3",
 	"Marianne Lenoir","Marlena Césaire", "Mei Cheng", "Mudekudeku", "Nadja Chamack", "Nathalie Sancoeur", "Nora Césaire", "Odille","Olga Mendeleiev", "Olympia Hill [Majestia]", "Penny Rolling",
 	"Sabine Cheng", "Sarah", "Shu Yin Cheng","Snowflake", "Tentomushi", "Tomoe Tsurugi","Véronique", ];
-var adultM = ["Albert", "Alec Cataldi", "Prince Ali","Alim Kubdel","Anaximandré (André) Bourgeois","André the Glacier", "Armand [Jean the Butler]", "Armand D'Argencourt", 
+var adultM = ["Albert", "Alec Cataldi", "Alim Kubdel","Anaximandré (André) Bourgeois","André the Glacier", "Armand [Jean the Butler]", "Armand D'Argencourt", 
 "Bertrand King", "Bob Roth", "Cash","Colt Fathom", "Dark Grimalkin", "Dean Gate [Doorman]","Denis Damocles", "Didier Roustan", "Fred Haprèle", "Wang Fu", "Gabriel Agreste", 
 "Gabriel Agreste [Reverse]","Harry Clown","Herakles","Hot Dog Dan", "Jagged Stone", "Jean-Pierre Monlataing", "Mercury","Kouki","Micazoyolin", "Mike Rochip (Technopirate)", 
 "Mr. Banana", "Otis Césaire", "Philippe", "Placide I.T. [Gorilla]", "Roger Raincomprix", "Rolland Dupain", "Santa Claus", "Simon Grimault", "Su-Han", "Supreme", "Sting", "Thomas Astruc", "Thorn", 
