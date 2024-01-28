@@ -6,7 +6,7 @@ var teenM = ["Adrien Agreste", "Adrien Agreste [Reverse]", "Jalil Kubdel","Delma
 "Mercury [PV]","Sparrow [PV]","Prince Ali","Lê Chiến Kim", "Lian", "Luka Couffaine", "Marc Anciel", "Markov", "Max Kanté", "Maxkov [Reverse]", "Nathaniel Kurtzberg", "Nino Lahiffe", "Théo Barbot","Wayhem",];
 var adultF = ["Agent Blue", "Agent Red", "Agent Yellow","Amelie Graham de Vanily", "Anarka Couffaine", "René d'Herblay Aramis de Vannes", "Bo rùa",
 	"Anne-Jeanne Théoxanne du Bocquale", "Audrey Bourgeois","Barbara Keynes [Knightowl]", "Caline Bustier", "Camilla Hombee", "Clara Contard", "Clara Nightingale",
-	"Claudie Kanté","Emilie Agreste","Gina Dupain", "Gisèle","Hippolyta","Hurricane","Ignoblia","Jeanne d'Arc", "La Mariquita", "Mrs. Rossi", "Mrs. Bianca [Lila's Mom#2]", "Lila's Mother #3",
+	"Claudie Kanté","Emilie Agreste","Gina Dupain", "Gisèle","Hippolyta","Hurricane","Ignoblia","Jeanne d'Arc", "La Mariquita", "Lila's Diplomat Mother", "Lila's Fashion Mother", "Lila's Deaf Mother",
 	"Marianne Lenoir","Marlena Césaire", "Mei Cheng", "Mudekudeku", "Nadja Chamack", "Nathalie Sancoeur", "Nora Césaire", "Odille","Olga Mendeleiev", "Olympia Hill [Majestia]", "Penny Rolling",
 	"Sabine Cheng", "Sarah", "Shu Yin Cheng","Snowflake", "Tentomushi", "Tomoe Tsurugi","Véronique", ];
 var adultM = ["Albert", "Alec Cataldi", "Alim Kubdel","Anaximandré (André) Bourgeois","André the Glacier", "Armand [Jean the Butler]", "Armand D'Argencourt", 
