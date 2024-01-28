@@ -9,16 +9,25 @@
 	<body>
 		<script src="js/script.js"></script>
 		<h1>Miraculous Shipyard</h1>
+		<i>I can't help it, I just think that they would make such a good pair<br/>
+		In canon they have never met! I don't care~ I ship it!</i>
 		<div class="box theme-a adaptive">
 		<form name="shipyard">
 		<h3>Select your building materials:</h3>
 		<table class="pickTable">
 			<thead>
-				<td class="pickTable"><input id="pickCast" value="pickCast" name="pick" type="radio" checked required>Use the entire cast of teens and adults!</td>
+				<td class="pickTable">
+					<input id="pickCast" value="pickCast" name="pick" type="radio" checked required>Use the entire cast of teens and adults!<br/>
+					<input id="pickF" name="pickF" class="filterCast" type="checkbox" value="female" checked><label for="pickF">Female</label>
+					<input id="pickM" name="pickM" class="filterCast" type="checkbox" value="male" checked><label for="pickM">Male</label>
+					<input id="pickT" name="pickT" class="filterCast" type="checkbox" value="teen" checked><label for="pickT">Teen</label>
+					<input id="pickA" name="pickA" class="filterCast" type="checkbox" value="adult" checked><label for="pickA">Adult</label>
+				</td>
 				<td class="pickTable"><input id="pickUser" value="pickUser" name="pick" type="radio" required>Create your own list of names!<br/>
 					<label for="name">Person name:</label>
 					<input id="name" name="name">
-					<button type="button" onclick="namepool()">Add</button></td>
+					<button type="button" onclick="namepool()">Add</button>
+				</td>
 			</thead>
 			<tbody>
 				<tr class="pickTable">
@@ -31,8 +40,9 @@
 				</tr>
 			</tbody>
 		</table>
-		
-		
+		<strong>Settings</strong><br/>
+		<input id="poly" name="poly" type="checkbox"><label for="poly">Allow more than 2 partners</label>
+		<br/>
 		<button type="button" onclick="shipIt()">Set Sail!</button></div>
 		<div class="box theme-b adaptive">
 			<h3>Constructed Ships</h3>
@@ -40,15 +50,5 @@
 			<button type="button" onclick="torpedo()">Sink those ships</button>
 		</div>
 		</form>
-		<h5>Dev Notes</h5>
-		<p>Let's see, I'll need a list of characters, a button to generate ships, and a place to put the results.</p>
-		<p>Improvements to make:</p>
-		<ol>
-			<li>no self-cest</li>
-			<li>v2: pick number of ships to generate</li>
-			<li>v3: pick chance to generate additional partners</li>
-			<li>v4: allow different filters for participants</li>
-			<li>adults, kids, kwamis</li>
-		</ol>
 	</body>
 </html>

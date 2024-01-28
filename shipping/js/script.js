@@ -1,47 +1,31 @@
 // why yes this should be a database. hush.
-var chars = Array("A.D.A", 
-	"Adrien Agreste", "Adrien Agreste [Reverse]", 
-	"Aeon",
-	"Agent Blue", "Agent Red", "Agent Yellow",
-	"Albert",
-	"Alec Cataldi",
-	"Prince Ali",
-	"Alim Kubdel", "Alix Kubdel", "Jalil Kubdel",
-	"Alya Césaire", "Alya Césaire",
-	"Amelie Graham de Vanily", "Anarka Couffaine", "Anaximandré (André) Bourgeois",
-	"André the Glacier", 
-	"René d'Herblay Aramis de Vannes", "La Coccinelle", "Bo rùa",
-	"Anne-Jeanne Théoxanne du Bocquale", 
-	"Armand [Jean the Butler]", "Despairbear", "Armand D'Argencourt", "Darkblade",
-	"Audrey Bourgeois", "Style Queen", "Aurore Beauréal",
-	"Barbara Keynes [Knightowl]",
-	"Bertrand King", "Bob Roth", "Caline Bustier", "Camilla Hombee", "Cash",
-	"Chloé Bourgeois", "Clara Contard", "Clara Nightingale",
-	"Claudie Kanté", "Colt Fathom", "Dark Grimalkin", "Dean Gate [Doorman]",
-	"Delmar [NY Special]", "Denis Damocles", "Didier Roustan", "Emilie Agreste",
-	"Fei Wu", "Fred Haprèle", "Wang Fu", "Gabriel Agreste", "Gabriel Agreste [Reverse]",
-	"Gina Dupain", "Gisèle", "Harry Clown", "Herakles", "Hippolyta",
-	"Hot Dog Dan", "Hurricane", "Ignoblia", "Ivan Bruel", "Jagged Stone", 
-	"Jean-Pierre Monlataing", "Jeanne d'Arc", 
-	"Félix Fathom", "Félix Agreste [PV]", "Jessica Keynes", "Jiao",
-	"Juleka Couffaine", "Kagami Tsurugi", "Kang", "Kid Mime [PV]", "Melodie [PV]", "Mercury [PV]", "Sparrow [PV]",
-	"Kouki", "Lê Chiến Kim", "La Mariquita", "Lian", 
-	"Lila Rossi", "Mrs. Rossi", "Mrs. Bianca [Lila's Mom#2]", "Lila's Mother #3",
-	"Luka Couffaine", "Marc Anciel", "Marianne Lenoir",
-	"Marinette Dupain-Cheng", "Marinette Dupain-Cheng [Reverse]", "Marinette Dupain-Cheng [PV]",
-	"Markov", "Marlena Césaire", "Max Kanté", "Maxkov [Reverse]", "Mei Cheng", "Micazoyolin",
-	"Mike Rochip (Technopirate)", "Mireille Caquet", "Mr. Banana", "Mudekudeku", "Mylène Haprèle",
-	"Nadja Chamack", "Nathalie Sancoeur", "Nathaniel Kurtzberg", "Nino Lahiffe", "Nora Césaire", "Odille", 
-	"Olga Mendeleiev", "Olympia Hill [Majestia]", "Ondine", "Oscar [Movie]", "Otis Césaire", "Penny Rolling",
-	"Philippe", "Placide I.T. [Gorilla]", "Roger Raincomprix", "Rolland Dupain", "Rose Lavillant",
-	"Sabine Cheng", "Sabrina Raincomprix", "Santa Claus", "Sarah", "Shu Yin Cheng",
-	"Simon Grimault", "Snowflake", "Socqueline Wang", "Sting", "Su-Han", "Supreme", "Tentomushi",
-	"Thomas Astruc", "Théo Barbot", "Thorn", "Tomoe Tsurugi", "Tom Dupain", "Vincent [Adrien's photographer]",
-	"Vincent Aza", "Vivica", "Véronique", "Wang Cheng", "Wayhem", "Wu Shifu", "Xavier Ramier");
+var teenF = ["A.D.A", "Aeon","Alix Kubdel", "Alya Césaire", "Alya Césaire [Reverse]","Aurore Beauréal","Chloé Bourgeois", "Fei Wu", "Jessica Keynes", "Juleka Couffaine", 
+"Kagami Tsurugi","Melodie [PV]", "Lila Rossi", "Marinette Dupain-Cheng", "Marinette Dupain-Cheng [Reverse]", "Marinette Dupain-Cheng [PV]","Mireille Caquet","Mylène Haprèle", 
+"Ondine", "Rose Lavillant","Sabrina Raincomprix", "Socqueline Wang", "Vivica", ];
+var teenM = ["Adrien Agreste", "Adrien Agreste [Reverse]", "Jalil Kubdel","Delmar [NY Special]", "Ivan Bruel","Félix Fathom", "Félix Agreste [PV]", "Jiao","Kang", "Kid Mime [PV]",
+"Mercury [PV]","Sparrow [PV]","Lê Chiến Kim", "Lian", "Luka Couffaine", "Marc Anciel", "Markov", "Max Kanté", "Maxkov [Reverse]", "Nathaniel Kurtzberg", "Nino Lahiffe", "Théo Barbot","Wayhem",];
+var adultF = ["Agent Blue", "Agent Red", "Agent Yellow","Amelie Graham de Vanily", "Anarka Couffaine", "René d'Herblay Aramis de Vannes", "Bo rùa",
+	"Anne-Jeanne Théoxanne du Bocquale", "Audrey Bourgeois","Barbara Keynes [Knightowl]", "Caline Bustier", "Camilla Hombee", "Clara Contard", "Clara Nightingale",
+	"Claudie Kanté","Emilie Agreste","Gina Dupain", "Gisèle","Hippolyta","Hurricane","Ignoblia","Jeanne d'Arc", "La Mariquita", "Mrs. Rossi", "Mrs. Bianca [Lila's Mom#2]", "Lila's Mother #3",
+	"Marianne Lenoir","Marlena Césaire", "Mei Cheng", "Mudekudeku", "Nadja Chamack", "Nathalie Sancoeur", "Nora Césaire", "Odille","Olga Mendeleiev", "Olympia Hill [Majestia]", "Penny Rolling",
+	"Sabine Cheng", "Sarah", "Shu Yin Cheng","Snowflake", "Tentomushi", "Tomoe Tsurugi","Véronique", ];
+var adultM = ["Albert", "Alec Cataldi", "Prince Ali","Alim Kubdel","Anaximandré (André) Bourgeois","André the Glacier", "Armand [Jean the Butler]", "Armand D'Argencourt", 
+"Bertrand King", "Bob Roth", "Cash","Colt Fathom", "Dark Grimalkin", "Dean Gate [Doorman]","Denis Damocles", "Didier Roustan", "Fred Haprèle", "Wang Fu", "Gabriel Agreste", 
+"Gabriel Agreste [Reverse]","Harry Clown","Herakles","Hot Dog Dan", "Jagged Stone", "Jean-Pierre Monlataing", "Mercury","Kouki","Micazoyolin", "Mike Rochip (Technopirate)", 
+"Mr. Banana", "Otis Césaire", "Philippe", "Placide I.T. [Gorilla]", "Roger Raincomprix", "Rolland Dupain", "Santa Claus", "Simon Grimault", "Su-Han", "Supreme", "Sting", "Thomas Astruc", "Thorn", 
+"Tom Dupain", "Vincent [Adrien's photographer]","Vincent Aza", "Wang Cheng", "Wu Shifu", "Xavier Ramier"];
+var chars = [].concat(teenF, teenM, adultF, adultM);
+
 var user = [];
 
 window.onload = function() {
-	render(chars, document.getElementById("system"));
+	render(get_filtered_cast(), document.getElementById("system"));
+	var checkboxes = document.querySelectorAll(".filterCast");
+	checkboxes.forEach(function (checkbox) {
+		checkbox.addEventListener('change', function() {
+			render(get_filtered_cast(), document.getElementById("system"));
+		});
+	});
 }
 
 function render(data, docList) {
@@ -52,6 +36,30 @@ function render(data, docList) {
 		option.value=i+1;
 		docList.appendChild(option);
 	}
+}
+
+function get_filtered_cast() {
+	// oh this is ugly
+	let cast=[];
+	if (document.getElementById("pickF").checked && document.getElementById("pickT").checked) {
+		cast.push.apply(cast, teenF);
+	}
+	if (document.getElementById("pickF").checked && document.getElementById("pickA").checked) {
+		cast.push.apply(cast, adultF);
+	}
+	if (document.getElementById("pickM").checked && document.getElementById("pickT").checked) {
+		cast.push.apply(cast, teenM);
+	}
+	if (document.getElementById("pickM").checked && document.getElementById("pickA").checked) {
+		cast.push.apply(cast, adultM);
+	}
+	cast.sort();
+	return cast;
+}
+
+function filter() {
+	let filterCast = get_filtered_cast();
+	render(filterCast, document.getElementById("system"))
 }
 
 function namepool() {
@@ -67,11 +75,28 @@ function get_random(list) {
 function shipIt() {
 	let shipyard = document.forms.shipyard;
 	let checked = shipyard.querySelector('input[name=pick]:checked');
-	let charList = (checked.value === "pickCast") ? chars : user;
+	let poly = shipyard.querySelector('input[name=poly]:checked');
+	let charList = (checked.value === "pickCast") ? get_filtered_cast() : user;
 
-	let ship = document.createElement('li');
-	ship.innerText = get_random(charList) + " x " + get_random(charList);
-	document.getElementById("shipped").appendChild(ship);
+	let shipE = document.createElement('li');
+	let partner = Array(get_random(charList));
+	let spouse = "";
+	let polyChance = poly ? 0.3 : 0;
+	do {
+		do {
+			spouse = get_random(charList);
+		} while (partner.includes(spouse));
+		partner.push(spouse);
+	} while (Math.random() < polyChance);
+	let ship = "";
+	for (i = 0; i < partner.length; ++i) {
+		if (ship !== "") {
+			ship += " x ";
+		}
+		ship += partner[i];
+	}
+	shipE.innerText = ship;
+	document.getElementById("shipped").appendChild(shipE);
 }
 
 function torpedo() {
