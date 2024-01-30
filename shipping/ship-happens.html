@@ -22,11 +22,13 @@
 					<input id="pickM" name="pickM" class="filterCast" type="checkbox" value="male" checked><label for="pickM">Male</label>
 					<input id="pickT" name="pickT" class="filterCast" type="checkbox" value="teen" checked><label for="pickT">Teen</label>
 					<input id="pickA" name="pickA" class="filterCast" type="checkbox" value="adult" checked><label for="pickA">Adult</label>
+					<input id="pickR" name="pickR" class="filterCast" type="checkbox" value="artificial"><label for="pickR">Robotic</label>
 				</td>
 				<td class="pickTable"><input id="pickUser" value="pickUser" name="pick" type="radio" required>Create your own list of names!<br/>
 					<label for="name">Person name:</label>
 					<input id="name" name="name">
 					<button type="button" onclick="namepool()">Add</button>
+					<button type="button" onclick="drainPool()">Clear</button>
 				</td>
 			</thead>
 			<tbody>
